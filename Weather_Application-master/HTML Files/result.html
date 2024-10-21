@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Results</title>
+</head>
+<body>
+
+<h1 th:text="'Hello, ' + ${user.name}" />
+<h2 th:text="'Weather results for the zipcode: ' + ${user.zip}" />
+
+<p th:text="'Nearest reading City is:' + ${user.weather.cityName}+' and the City ID is:' + ${user.weather.cityId}"/>
+<p th:text="'Weather Details are as follows:'"/>
+<p th:text="${user.weather.main.toString()}"/>
+<script type="text/javascript">
+    <!--
+    var feelsLike = ${user.weather,main.feels_like};
+    var maxTemp = ${user.maxTemp};
+    var minTemp = ${user.minTemp};
+
+    if ( maxTemp <= feelsLike) {
+      document.write("<b>Maximum Temperature threshold. Careful!</b>");
+    } else if (minTemp >= feelsLike) {
+      document.write("<b>Minimum Temperature threshold. Careful!</b>");
+    } else {
+        document.write("<b>In optimal temperature range!</b>");
+    }
+    //
+    -->
+</script>
+<p><br><br></p>
+
+
+<a href="/index">Try again?</a>
+</body>
+</html>
