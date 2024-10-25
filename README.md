@@ -56,6 +56,3 @@ The **Weather Application** provides users with the ability to view weather data
 
 ## Contribution Guidelines
 We welcome contributions to improve the project. Please create a pull request for any changes or new features you'd like to add.
-
-## License
-This project is licensed under the MIT License.
